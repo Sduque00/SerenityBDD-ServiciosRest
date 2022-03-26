@@ -1,0 +1,7 @@
+
+|
+java:S1450"ZRemove the "bodyRequest" field and declare it as a local variable in the relevant methods.(ñ¯Ö”øÿÿÿÿ8Ëˆ¥ü/
+Q
+java:S1068"/Remove this unused "bodyRequest" private field.(ñ¯Ö”øÿÿÿÿ8öˆ¥ü/
+z
+java:S1319"dThe type of "headers" should be an interface such as "Map" rather than the implementation "HashMap".(ª¡Ã˜
