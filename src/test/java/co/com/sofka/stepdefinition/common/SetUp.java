@@ -8,6 +8,8 @@ public class SetUp {
     protected static final String BASE_URI = "https://reqres.in";
     protected static final String SINGLE_RESOURCE = "/api/unknown/2";
     protected static final String CREATE_RESOURCE = "/api/users";
+    protected static final String SINGLE_RESOURCE_NOT_FOUND = "/apii/users404";
+
 
     protected void generalSetUp(){
         setUpLog4j2();

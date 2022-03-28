@@ -63,5 +63,36 @@ public class SingleResourceStepDefinition extends SetUp {
 
     }
 
+    @Given("que estoy en servicio web")
+    public void queEstoyEnServicioWeb() {
+        PropertyConfigurator.configure(USER_DIR.getValue() + LOG4J_PROPERTIES_FILE_PATH.getValue());
+        generalSetUp();
+        actor.can(CallAnApi.at(BASE_URI));
+        headers.put("Content-Type", ContentType.APPLICATION_JSON);
+        LOGGER.info(ContentType.APPLICATION_JSON);
+
+    }
+
+    @When("realizo la peticion de consultar recurso con otra url")
+    public void realizoLaPeticionDeConsultarRecursoConOtraUrl() {
+        actor.attemptsTo(
+                doGet().usingTheResource(SINGLE_RESOURCE_NOT_FOUND)
+                        .withHeaders(headers)
+        );
+
+    }
+
+    @Then("obtendre un codigo de respuesta erroneo")
+    public void obtendreUnCodigoDeRespuestaErroneo() {
+        LastResponse.received().answeredBy(actor).prettyPrint();
+
+        actor.should(
+                seeThatResponse("El código de respuesta debe ser: " + HttpStatus.SC_NOT_FOUND,
+                        validatableResponse -> validatableResponse.statusCode(HttpStatus.SC_NOT_FOUND)
+                )
+        );
+
+    }
+
 
 }

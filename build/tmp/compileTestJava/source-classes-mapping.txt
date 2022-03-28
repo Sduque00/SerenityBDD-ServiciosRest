@@ -1,10 +1,10 @@
-co/com/sofka/stepdefinition/common/SetUp.java
- co.com.sofka.stepdefinition.common.SetUp
+co/com/sofka/stepdefinition/create/CreateStepDefinition.java
+ co.com.sofka.stepdefinition.create.CreateStepDefinition
 co/com/sofka/stepdefinition/singleresource/SingleResourceStepDefinition.java
  co.com.sofka.stepdefinition.singleresource.SingleResourceStepDefinition
 co/com/sofka/runner/singleresource/SingleResourceTest.java
  co.com.sofka.runner.singleresource.SingleResourceTest
 co/com/sofka/runner/create/CreateTest.java
  co.com.sofka.runner.create.CreateTest
-co/com/sofka/stepdefinition/create/CreateStepDefinition.java
- co.com.sofka.stepdefinition.create.CreateStepDefinition
+co/com/sofka/stepdefinition/common/SetUp.java
+ co.com.sofka.stepdefinition.common.SetUp

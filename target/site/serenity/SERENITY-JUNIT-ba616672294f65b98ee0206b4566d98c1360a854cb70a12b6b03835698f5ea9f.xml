@@ -1,1 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="crear job" skipped="0" tests="1" time="4.69" timestamp="2022-03-26 01:05:58"><testcase name="Crear"/></testsuite>
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="0" name="crear job" skipped="0" tests="2" time="4.84" timestamp="2022-03-28 12:34:06"><testcase name="Crear"/><testcase name="Intentar crear usuario con diferente content-type"/></testsuite>
